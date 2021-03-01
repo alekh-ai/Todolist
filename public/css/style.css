@@ -1,0 +1,250 @@
+:root {
+	--d-primary: #d5a2ea;
+	--d-primary-1: #48eca1;
+	--d-primary-1--dark: #9a75dc;
+	--d-primary-2: #eaa2da;
+	--d-secondary: #e4e9fd;
+
+	--primary: #4d375d;
+	--secondary: #eb596e;
+	--text: #121013;
+	--accent: #ffe227;
+
+	--d-fade: #ddd2e8;
+}
+
+html {
+	background-color: #e4e9fd;
+	background-image: -webkit-linear-gradient(
+		65deg,
+		var(--d-primary-2) 50%,
+		#e4e9fd 50%
+	);
+	min-height: 100vh;
+	font-family: 'Poppins', 'helvetica neue';
+	font-weight: 200;
+}
+
+h1 {
+	color: #fff;
+	padding: 10px;
+}
+
+.box {
+	max-width: 400px;
+	margin: 50px auto;
+	background: #fcffff;
+	border-radius: 5px;
+	box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.2);
+}
+
+#heading {
+	background-color: var(--d-primary-1);
+	text-align: center;
+}
+
+.item {
+	position: relative;
+	min-height: 70px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.item:last-child {
+	border-bottom: 0;
+}
+
+input:checked + p {
+	text-decoration: line-through;
+	text-decoration-color: var(--d-fade);
+	color: var(--d-fade);
+}
+
+input[type='checkbox'] {
+	margin: 20px;
+}
+
+p {
+	margin: 0;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Poppins';
+	color: #00204a;
+	color: #45494f;
+}
+
+form.item {
+	text-align: center;
+	margin-left: 20px;
+}
+
+button {
+	width: 50px;
+	min-height: 50px;
+	border-radius: 50%;
+	border-color: transparent;
+	background-color: var(--d-primary-1);
+	color: #fff;
+	font-size: 30px;
+	padding-bottom: 6px;
+	border-width: 0;
+	outline: none;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+button:hover {
+	transition: 0.5s;
+	background-color: var(--d-primary-1--dark);
+}
+
+button:active {
+	transform: scale(1.05) translateX(1px);
+}
+
+button#delete {
+	position: absolute;
+	right: 10px;
+	min-width: 0;
+	padding: 0;
+	background-color: #f98596;
+	transform: scale(0.5);
+	opacity: 0.4;
+	transition-property: opacity;
+	transition-duration: 1.5s;
+}
+
+button#delete:hover {
+	background-color: var(--secondary);
+	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 0.9s;
+}
+
+button#delete:active {
+	transform: scale(0.5);
+}
+
+input[type='text'] {
+	text-align: center;
+	height: 60px;
+	top: 10px;
+	border: none;
+	background: transparent;
+	font-size: 20px;
+	font-weight: 200;
+	width: 313px;
+}
+
+input[type='text']:focus {
+	outline: none;
+	box-shadow: inset 0 -3px 0 0 var(--d-primary);
+}
+
+::placeholder {
+	color: grey;
+	opacity: 1;
+}
+
+footer {
+	font-weight: 400;
+	color: white;
+	color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+	text-decoration-color: transparent;
+	cursor: pointer;
+	transition: 0.7s;
+}
+
+a:hover {
+	text-decoration: underline;
+	text-underline-offset: 0.5rem;
+	text-decoration-color: var(--d-primary);
+	transition: 1s;
+}
+
+.center {
+	text-align: center;
+}
+
+nav {
+	margin: 0 88.5px;
+	padding: 0 1rem;
+	background-color: #f8f8f8;
+	border-color: #e7e7e7;
+}
+
+.navbar {
+	border-radius: 4px;
+}
+
+.navbar {
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+	float: left;
+	height: 50px;
+	padding: 15px 15px;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.navbar-nav {
+	list-style: none;
+}
+
+.navbar-nav > li {
+	display: inline-block;
+	margin: 0 2rem;
+}
+
+.navbar-nav > li > a {
+	font-weight: 600;
+	color: var(--d-primary-1);
+}
+
+.navbar-nav > li > a:hover {
+	text-decoration: none;
+	color: var(--d-primary);
+}
+
+.item:hover {
+	background-color: rgba(0, 0, 0, 0.025);
+	transition: 0.5s;
+}
+
+.search-list {
+	position: relative;
+	right: -420px;
+	transform: scale(0.8);
+}
+
+.search-list > input[type='text'] {
+	text-align: center;
+	height: 60px;
+	top: 10px;
+	border: none;
+	font-size: 20px;
+	font-weight: 200;
+	width: 313px;
+	box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.05);
+	transition: box-shadow 0.5s;
+}
+
+.search-list > input[type='text']:focus {
+	outline: none;
+	box-shadow: inset 0 -3px 0 0 var(--d-primary);
+	transition: 0.7s;
+}

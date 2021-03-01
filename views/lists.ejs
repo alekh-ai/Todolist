@@ -1,0 +1,30 @@
+<%- include('./partials/header') -%>
+
+    <div class="box" id="heading">
+        <h1> Lists </h1>
+    </div>
+
+    <div class="box">
+
+        <% listNames.forEach( (list)=> { %>
+            <form action="/deleteList" method="post">
+
+                <div class="item">
+                    <a href="/<%= list.listName %>">
+                        <p>
+                            <%= list.listName %>
+                        </p>
+                    </a>
+
+                    <button id="delete" class="btn" name="deleteList" value="<%= list._id %>"
+                        onClick="swal({title:'Deleted Successfully', text:'', icon:'success'})"> &times;
+                    </button>
+                </div>
+
+            </form>
+
+            <% }) %>
+
+    </div>
+
+    <%- include('./partials/footer') -%>

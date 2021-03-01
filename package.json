@@ -1,0 +1,25 @@
+{
+  "name": "Todolist_v2",
+  "version": "1.0.0",
+  "description": "This is a fun Project Created with express, ejs and mongoDB",
+  "main": "app.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "Alekh",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.15"
+  }
+}
